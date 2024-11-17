@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore India's Beautiful Beaches</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="mystyle.css" />
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      /* Flexbox setup on the body for sticky footer */
+      body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 0;
+          padding: 0;
+          background-color: #f0f8ff;
+          color: #333;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+      }
+
+
+      /* Main content should grow to push footer down */
+      main {
+          display: flex;
+          justify-content: center;
+          padding: 20px;
+          margin-bottom: 50px;
+          flex-grow: 1; /* This makes main take up available space */
+      }
+
+      .locations {
+          text-align: center;
+          background: white;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          max-width: 600px;
+          width: 100%;
+
+          /* display: flex;
+          flex-direction: column;
+          justify-content: space-b; */
+      }
+
+      .locations h2 {
+          color: #0750a2;
+          font-size: 24px;
+          margin-bottom: 20px;
+      }
+
+      .locations ul {
+          list-style-type: none;
+          padding: 0;
+          font-size: 18px;
+      }
+
+      .locations a {
+          text-decoration: none;
+          color: #0750a2;
+      }
+
+      .locations a:hover {
+          color: #0750a2;
+          text-decoration: underline;
+      }
+
+          .locations {
+              padding: 80px;
+              margin: 10px;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logobg.png" alt="BeachBuddy" />
+      </div>
+      <nav>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="myapp.html" class="nav-link">home</a>
+          </li>
+          <li class="nav-item">
+            <a href="explore.html" class="nav-link">explore</a>
+          </li>
+          <li class="nav-item">
+            <a href="weather.html" class="nav-link">weather</a>
+          </li>
+          <li class="nav-item">
+            <a href="safety.html" class="nav-link">safety</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="locations">
+        <h2>Select a Location:</h2>
+        <ul>
+          <li><a href="explorepage/goa.html">Goa</a></li>
+          <li><a href="explorepage/kerala.html">Kerala</a></li>
+          <li><a href="explorepage/tamil-nadu.html">Tamil Nadu</a></li>
+          <li><a href="explorepage/andhra-pradesh.html">Andhra Pradesh</a></li>
+          <li><a href="explorepage/odisha.html">Odisha</a></li>
+          <li><a href="explorepage/maharashtra.html">Maharashtra</a></li>
+          <li><a href="explorepage/gujarat.html">Gujarat</a></li>
+          <li><a href="explorepage/west-bengal.html">West Bengal</a></li>
+          <li>
+            <a href="explorepage/andaman-nicobar.html"
+              >Andaman and Nicobar Islands</a
+            >
+          </li>
+          <li><a href="explorepage/lakshadweep.html">Lakshadweep</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Beach Buddy. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
